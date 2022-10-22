@@ -92,6 +92,10 @@ label, input, textarea{
     font-family: var(--fuentePrinciapal);
 }
 
+/* .padding{
+    padding-top: 4rem;
+} */
+
 .botonEnviar{
     text-transform: uppercase;
     font-size: 1.5rem;
@@ -180,7 +184,7 @@ label, input, textarea{
         position: absolute;
         display: block;
         font-size: 2.5rem;
-        z-index: 9999;
+        z-index: 9990;
         top: 2rem;
         right: 2rem;
         padding: .5rem;
@@ -209,7 +213,7 @@ label, input, textarea{
         padding-right: 2rem;
         padding-bottom: 2rem;
         background-color: var(--negro);
-        z-index: 9998;
+        z-index: 9900;
     }
     .btnLogIn, .btnSingUp{
         background: none;
@@ -238,8 +242,8 @@ label, input, textarea{
     align-items: center;
 }
 .logoPes6{
-    max-height: 10rem;
-    max-width: 10rem;
+    max-height: 8rem;
+    max-width: 8rem;
 }
 @media(max-width:768px){
     .Logo_Leyenda{
@@ -248,12 +252,14 @@ label, input, textarea{
 }
 
 .header{
+    position:sticky;
+    top: 0;
     background-color: var(--negro);
     display: flex;
     align-items: center;
     justify-content:space-evenly;
     width: 100%;
-    margin: 0;
+    z-index: 9999;
 }
 .titulo{
     color: var(--blanco)
@@ -551,23 +557,50 @@ label, input, textarea{
     display: grid;
     grid-template-columns: 20% 60% 20%;
     text-align: center;
-
 }
 
 .encabezadoForo{
-    font-size: 2rem;
+    font-size: 1.3rem;
     background-color: #283E51;
     padding: 0.5rem;
 }
 
+
 .avatar_foro{
-    margin-top: 5rem;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #f0f1f5;
+    margin-bottom: 1rem;
+}
+
+.aporte{
+    grid-column: 2/3;
+    margin-bottom: 1rem;
+    background-color: rgb(5, 5, 5);
+}
+.comentario{
+    grid-column: 2/3;
+    background-color: rgb(75, 75, 75);
+}
+
+.like{
+    grid-row: 2/3;
+    margin-bottom: 1rem;
+}
+.like, .dislike{
+    background-color:#7696ae;
+    grid-column: 3/4;
+}
+.margin-hover-apoyo{
+    padding-top: 2rem;
+}
+.margin-hover-apoyo:hover{
+    color: var(--blanco);
 }
 
 .aporte, .comentario{
-    color: var(--negro);
-    font-size: medium;
-    background-color: rgb(205, 198, 198);
+    color: var(--blanco);
+    font-size:larger;
     padding:2rem;
 }
 
