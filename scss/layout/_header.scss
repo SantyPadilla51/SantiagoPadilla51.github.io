@@ -1,0 +1,33 @@
+.Logo_Leyenda{
+    display: flex;
+    align-items: center;
+}
+.logoPes6{
+    max-height: 8rem;
+    max-width: 8rem;
+}
+@media(max-width:768px){
+    .Logo_Leyenda{
+        flex-direction: inherit;
+    }
+}
+
+.header{
+    position:sticky;
+    top: 0;
+    background-color: var(--negro);
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    width: 100%;
+    z-index: 9999;
+}
+.titulo{
+    color: var(--blanco)
+}
+@media (max-width: 1200px) {
+    .navegacionPrincipal{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

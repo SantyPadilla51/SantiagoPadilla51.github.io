@@ -1,0 +1,55 @@
+#menu, #menu-check{
+    display: none;
+}
+@media (max-width:768px){
+    #menu-check:not(checked) ~ .navegacionPrincipal {
+        display: none;
+    }
+    #menu-check:checked ~ .navegacionPrincipal {
+        display: block;
+    }
+    #menu{
+        position: absolute;
+        display: block;
+        font-size: 2.5rem;
+        z-index: 9990;
+        top: 2rem;
+        right: 2rem;
+        padding: .5rem;
+    }
+    #menu:hover{
+        cursor: pointer;
+        background-color: darksalmon;
+        border-radius: 3px;
+    }
+    #menu-cerrar{
+        display: none;
+    }
+    #menu-check:checked ~ label #menu-abrir{
+        display: none;
+    }
+    #menu-check:checked ~ label #menu-cerrar{
+        display: block;
+    }
+
+    .navegacionPrincipal{
+        position: absolute;
+        top: 0;
+        right: 0;
+        height:auto;
+        padding-top: 7rem;
+        padding-right: 2rem;
+        padding-bottom: 2rem;
+        background-color: var(--negro);
+        z-index: 9900;
+    }
+    .btnLogIn, .btnSingUp{
+        background: none;
+        color: var(--blanco);
+    }
+    .header label ,.enlacesPrincipales, .btnLogIn, .btnSingUp{
+        display: block;
+        text-align: right;
+    }
+
+}

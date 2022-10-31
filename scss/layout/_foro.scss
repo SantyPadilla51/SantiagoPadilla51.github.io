@@ -1,0 +1,52 @@
+.gridForo{
+    border: #000 solid 1.5px;
+    margin: 5rem;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+}
+
+.encabezadoForo{
+    font-size: 1.3rem;
+    background-color: #283E51;
+    padding: 0.5rem;
+}
+
+.avatar_foro{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    background-color: #546198;
+}
+.aporte{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: rgb(5, 5, 5);
+}
+.comentario{
+    grid-column: 2/3;
+    background-color: rgb(75, 75, 75);
+}
+.like{
+    grid-row: 2/3;
+}
+.like, .dislike{
+    background-color:#7696ae;
+    grid-column: 3/4;
+}
+.dislike, .comentario, .info_usuario{
+    grid-row: 3/4;
+}
+.aporte, .comentario{
+    color: var(--blanco);
+    font-size:larger;
+    padding: 1rem;
+}
+.info_usuario{
+    grid-column: 1/2;
+    display:flex;
+    align-items: center;
+    margin: 0 auto;
+    font-family: var(--fuentePrinciapal);
+    font-size: larger;
+    font-weight: 500;
+}

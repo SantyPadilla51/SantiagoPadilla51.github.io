@@ -1,0 +1,76 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    background-color: #4b79a1;
+    background-image: linear-gradient(0deg, #4b79a1 0%, #3b4489 45%);
+}
+
+
+h1,h2,h3,h4{
+    font-family: var(--fuentePrinciapal);
+    color: var(--blanco);
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0;
+}
+
+p{
+    margin: 0;
+    font-family: var(--fuentePrinciapal);
+    color: var(--blanco);
+}
+
+a{
+    text-transform: uppercase;
+    margin-left: 2rem;
+    font-family: var(--fuentePrinciapal);
+    text-decoration: none;
+    color: var(--blanco);
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 1rem;
+    
+}
+
+a:hover{
+    border-radius: 3px;
+    color: var(--negro);
+    cursor: pointer;
+    background-color: burlywood;
+}
+
+img{
+    max-width: 30%;
+}
+
+label{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    text-transform: uppercase;
+}
+
+
+input{
+    font-size: 1.3rem;
+    padding: 1rem;
+    background-color: antiquewhite;
+}
+
+span{
+    color: var(--blanco);
+}
+
+textarea{
+    background-color: antiquewhite;
+    font-size: 1.5rem;
+}
+
+label, input, textarea{
+    font-family: var(--fuentePrinciapal);
+}
