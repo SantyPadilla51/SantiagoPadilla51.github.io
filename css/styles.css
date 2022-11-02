@@ -275,6 +275,15 @@ label, input, textarea {
   cursor: pointer;
   background-color: darksalmon; }
 
+.titulo_foro {
+  color: var(--blanco);
+  font-family: var(--fuentePrinciapal);
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 1rem;
+  padding-top: 2rem; }
+
 .gridForo {
   border: #000 solid 1.5px;
   margin: 5rem;
@@ -287,10 +296,14 @@ label, input, textarea {
   padding: 0.5rem; }
 
 .avatar_foro {
+  padding: 0.5rem;
   display: flex;
   align-items: center;
-  margin: 0 auto;
-  background-color: #546198; }
+  background-color: #63669a;
+  border-bottom: #333131 solid 0.5px; }
+
+.avatar_foro img {
+  margin: 0 auto; }
 
 .aporte {
   grid-column: 2/3;
@@ -302,28 +315,79 @@ label, input, textarea {
   background-color: #4b4b4b; }
 
 .like {
-  grid-row: 2/3; }
+  display: flex;
+  align-items: center;
+  grid-row: 2/3;
+  border-bottom: #333131 solid 0.5px; }
 
 .like, .dislike {
-  background-color: #7696ae;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #63669a;
   grid-column: 3/4; }
 
-.dislike, .comentario, .info_usuario {
-  grid-row: 3/4; }
+.numero_like {
+  color: var(--negro);
+  font-family: var(--fuentePrinciapal);
+  font-size: 2rem;
+  font-weight: 500; }
+
+.numero_dislike {
+  color: #d73535;
+  font-family: var(--fuentePrinciapal);
+  font-size: 2rem;
+  font-weight: 500; }
+
+.numero_dislike,
+.numero_like {
+  background-color: var(--blanco);
+  padding: 0.6rem;
+  border-radius: 1px; }
 
 .aporte, .comentario {
   color: var(--blanco);
   font-size: larger;
-  padding: 1rem; }
+  padding: 1.2rem; }
 
 .info_usuario {
+  background-color: #63669a;
   grid-column: 1/2;
-  display: flex;
-  align-items: center;
-  margin: 0 auto;
+  display: block;
+  padding-left: 1rem;
+  padding-top: 1rem;
   font-family: var(--fuentePrinciapal);
   font-size: larger;
   font-weight: 500; }
+
+.info_usuario span {
+  color: var(--negro); }
+
+@media (max-width: 768px) {
+  .avatar_foro img {
+    height: 4rem;
+    width: 4rem; } }
+
+.gridPerfil {
+  margin: 7rem;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  column-gap: 2rem; }
+
+.infoUsuario {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2rem;
+  background-color: burlywood;
+  border-radius: 3px; }
+
+.tabla_del_jugador {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-auto-flow: column;
+  grid-auto-rows: min-content; }
 
 .contenidoPrincipal {
   background-image: url(../../assets/wallpaperbetter.com_1920x1080.jpg);

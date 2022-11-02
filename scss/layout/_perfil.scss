@@ -1,0 +1,23 @@
+.gridPerfil{
+    margin: 7rem;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    column-gap: 2rem;
+}
+
+.infoUsuario{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem;
+    background-color: burlywood;
+    border-radius: 3px;
+}
+
+.tabla_del_jugador{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-auto-flow: column;
+    grid-auto-rows: min-content;
+}

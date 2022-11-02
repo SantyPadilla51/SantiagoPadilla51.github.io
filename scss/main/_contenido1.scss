@@ -1,62 +1,62 @@
 .contenidoPrincipal{
-    background-image: url(../../assets/wallpaperbetter.com_1920x1080.jpg);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    height: 65rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    max-width: 100%;
+  background-image: url(../../assets/wallpaperbetter.com_1920x1080.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 65rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 100%;
     
 }
 
 .contenido1{
-    background-color: rgba(0, 0, 0, .7);
-    width: 100%;
-    height: 65rem;
-    max-width: 100%;
-    display: flex;
-    align-items: center;
+  background-color: rgba(0, 0, 0, .7);
+  width: 100%;
+  height: 65rem;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
 
 }
 .info_presentacion{
-    margin: 0 auto;
-    width: 70%;
+  margin: 0 auto;
+  width: 70%;
 }
 
 .titulo2{
-    text-align: center;
-    line-height: 5rem;
-    font-size: 3rem;
-    font-weight: bold;
+  text-align: center;
+  line-height: 5rem;
+  font-size: 3rem;
+  font-weight: bold;
 }
 
 .animacionTitulo {
-    -webkit-animation: animacionTitulo 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-    animation: animacionTitulo 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both; 
+  -webkit-animation: animacionTitulo 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  animation: animacionTitulo 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both; 
 }
 @-webkit-keyframes animacionTitulo {
-    0% {
-        -webkit-filter: blur(12px);
-                filter: blur(12px);
-        opacity: 0;
-      }
-      100% {
-        -webkit-filter: blur(0px);
-                filter: blur(0px);
-        opacity: 1;
-      }
-    }
-    @keyframes animacionTitulo {
-      0% {
-        -webkit-filter: blur(12px);
-                filter: blur(12px);
-        opacity: 0;
-      }
-      100% {
-        -webkit-filter: blur(0px);
-                filter: blur(0px);
-        opacity: 1;
-      }
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes animacionTitulo {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
 }

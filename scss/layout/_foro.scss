@@ -1,3 +1,13 @@
+.titulo_foro{
+    color: var(--blanco);
+    font-family: var(--fuentePrinciapal);
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+}
+
 .gridForo{
     border: #000 solid 1.5px;
     margin: 5rem;
@@ -12,11 +22,16 @@
 }
 
 .avatar_foro{
+    padding: 0.5rem;
     display: flex;
     align-items: center;
-    margin: 0 auto;
-    background-color: #546198;
+    background-color:rgb(99, 102, 154);
+    border-bottom: rgb(51, 49, 49) solid 0.5px ;
 }
+.avatar_foro img{
+    margin: 0 auto;
+}
+
 .aporte{
     grid-column: 2/3;
     grid-row: 2/3;
@@ -27,26 +42,62 @@
     background-color: rgb(75, 75, 75);
 }
 .like{
+    display: flex;
+    align-items: center;
     grid-row: 2/3;
+    border-bottom: rgb(51, 49, 49) solid 0.5px;
 }
 .like, .dislike{
-    background-color:#7696ae;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:rgb(99, 102, 154);
     grid-column: 3/4;
 }
-.dislike, .comentario, .info_usuario{
-    grid-row: 3/4;
+
+.numero_like{
+    color: var(--negro);
+    font-family: var(--fuentePrinciapal);
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.numero_dislike{
+    color: rgb(215, 53, 53);
+    font-family: var(--fuentePrinciapal);
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.numero_dislike,
+.numero_like{
+    background-color: var(--blanco);
+    padding: 0.6rem;
+    border-radius: 1px;
+
 }
 .aporte, .comentario{
     color: var(--blanco);
     font-size:larger;
-    padding: 1rem;
+    padding: 1.2rem;
 }
 .info_usuario{
+    background-color:rgb(99, 102, 154);
     grid-column: 1/2;
-    display:flex;
-    align-items: center;
-    margin: 0 auto;
+    display:block;
+    padding-left: 1rem;
+    padding-top: 1rem;
     font-family: var(--fuentePrinciapal);
     font-size: larger;
     font-weight: 500;
+}
+.info_usuario span{
+    color:var(--negro);
+}
+
+@media (max-width: 768px){
+    .avatar_foro img{
+        height: 4rem;
+        width: 4rem;
+    }
 }
