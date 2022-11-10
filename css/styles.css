@@ -130,49 +130,6 @@ label, input, textarea {
   color: var(--blanco);
   background-color: darksalmon; }
 
-#menu, #menu-check {
-  display: none; }
-
-@media (max-width: 768px) {
-  #menu-check:not(checked) ~ .navegacionPrincipal {
-    display: none; }
-  #menu-check:checked ~ .navegacionPrincipal {
-    display: block; }
-  #menu {
-    position: absolute;
-    display: block;
-    font-size: 2.5rem;
-    z-index: 9990;
-    top: 2rem;
-    right: 2rem;
-    padding: .5rem; }
-  #menu:hover {
-    cursor: pointer;
-    background-color: darksalmon;
-    border-radius: 3px; }
-  #menu-cerrar {
-    display: none; }
-  #menu-check:checked ~ label #menu-abrir {
-    display: none; }
-  #menu-check:checked ~ label #menu-cerrar {
-    display: block; }
-  .navegacionPrincipal {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: auto;
-    padding-top: 7rem;
-    padding-right: 2rem;
-    padding-bottom: 2rem;
-    background-color: var(--negro);
-    z-index: 9900; }
-  .btnLogIn, .btnSingUp {
-    background: none;
-    color: var(--blanco); }
-  .header label, .enlacesPrincipales, .btnLogIn, .btnSingUp {
-    display: block;
-    text-align: right; } }
-
 .Logo_Leyenda {
   display: flex;
   align-items: center; }
@@ -186,22 +143,57 @@ label, input, textarea {
     flex-direction: inherit; } }
 
 .header {
-  position: sticky;
-  top: 0;
-  background-color: var(--negro);
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 100%;
-  z-index: 9999; }
+  padding: 0; }
 
 .titulo {
   color: var(--blanco); }
 
-@media (max-width: 1200px) {
-  .navegacionPrincipal {
-    display: flex;
-    flex-wrap: wrap; } }
+.nav-link {
+  font-family: var(--fuentePrinciapal);
+  font-size: 1.4rem;
+  color: var(--blanco); }
+
+.menuHamburguesa {
+  background-color: var(--blanco);
+  padding: 1.3rem;
+  border-radius: 2px; }
+
+.linksPrincipales {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; }
+
+.menu-animacion {
+  -webkit-animation: menu-animacion 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  animation: menu-animacion 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; }
+
+@-webkit-keyframes menu-animacion {
+  0% {
+    -webkit-transform: rotateX(-100deg);
+    transform: rotateX(-100deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 0; }
+  100% {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 1; } }
+
+@keyframes menu-animacion {
+  0% {
+    -webkit-transform: rotateX(-100deg);
+    transform: rotateX(-100deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 0; }
+  100% {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 1; } }
 
 .parches {
   color: var(--negro);
@@ -547,7 +539,6 @@ label, input, textarea {
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
-  max-width: 140rem;
   margin: 0;
   padding: 1rem; }
 
@@ -558,3 +549,11 @@ label, input, textarea {
 .redes_footer p {
   margin-right: 1rem;
   font-size: 1.2rem; }
+
+@media (max-width: 435px) {
+  .footer {
+    display: flex;
+    flex-direction: column; }
+  .enlaces_footer {
+    display: flex;
+    flex-direction: row; } }

@@ -13,21 +13,63 @@
 }
 
 .header{
-    position:sticky;
-    top: 0;
-    background-color: var(--negro);
-    display: flex;
-    align-items: center;
-    justify-content:space-evenly;
-    width: 100%;
-    z-index: 9999;
+    padding: 0;
 }
 .titulo{
     color: var(--blanco)
 }
-@media (max-width: 1200px) {
-    .navegacionPrincipal{
-        display: flex;
-        flex-wrap: wrap;
+
+.nav-link{
+    font-family: var(--fuentePrinciapal);
+    font-size: 1.4rem;
+    color: var(--blanco);
+}
+
+.menuHamburguesa{
+    background-color: var(--blanco);
+    padding: 1.3rem;
+    border-radius: 2px;
+}
+.linksPrincipales{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.menu-animacion {
+	-webkit-animation: menu-animacion 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+	        animation: menu-animacion 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+}
+
+@-webkit-keyframes menu-animacion {
+    0% {
+      -webkit-transform: rotateX(-100deg);
+              transform: rotateX(-100deg);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateX(0deg);
+              transform: rotateX(0deg);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+      opacity: 1;
+    }
+  }
+  @keyframes menu-animacion {
+    0% {
+      -webkit-transform: rotateX(-100deg);
+              transform: rotateX(-100deg);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateX(0deg);
+              transform: rotateX(0deg);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+      opacity: 1;
     }
 }
