@@ -1,9 +1,10 @@
+@import '../base/variables';
 .botonEnviar{
     text-transform: uppercase;
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 700;
     margin-top: 1rem;
-    
+    font-family: $fuentePrincipal;
 }
 .botonEnviar:hover{
     cursor: pointer;
@@ -20,12 +21,12 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
     border-radius: 3px;
-    color: var(--negro);
+    color: $negro;
 }
 .btnLogIn:hover,
 .btnSingUp:hover{
     text-decoration: none;
-    color: var(--blanco);
+    color: $blanco;
     background-color: darksalmon;
 }
 @media (max-width: 1200px){
@@ -49,7 +50,7 @@
 
 }
 .botones2{
-    font-family: var(--fuentePrinciapal);
+    font-family: $fuentePrincipal;
     background-color:burlywood;
     text-transform: uppercase;
     padding-left: 2rem;
@@ -57,11 +58,13 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
     border-radius: 3px;
-    color: var(--negro)
+    color: $negro;
    
 }
 .botones2:hover{
     text-decoration: none;
-    color: var(--blanco);
+    color: $blanco;
     background-color: darksalmon;
 }
+
+

@@ -1,23 +1,26 @@
+@import '../base/variables';
 .contenidoFormulario{
     padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 .encabezadoContacto{
     font-size: 2.3rem;
-    background-color: var(--negro);
+    background-color: $negro;
     margin: 0;
     padding: 2rem;
-    color: var(--blanco);
+    color: $blanco;
 }
 
 .formulario{
     margin: 0 auto;
-    margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
     width: 65%;
     background: rgb(147,147,103);
     background: radial-gradient(circle, rgba(147,147,103,1) 17%, rgba(181,167,85,1) 97%);
-    color: var(--blanco);
+    color: $blanco;
     border: 2px solid antiquewhite;
     padding: 2rem;
+    font-family: $fuentePrincipal;
+    font-weight: 600;
 }

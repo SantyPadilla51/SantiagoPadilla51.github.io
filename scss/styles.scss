@@ -1,12 +1,11 @@
 @import 'base/reset';
-@import 'base/colores';
-@import 'base/tipografia';
+@import 'base/variables';
+@import 'base/mixins';
 @import 'base/globales';
 @import 'components/botones';
-@import 'components/menuHamburguesa';
 
 @import 'layout/header';
-@import 'layout/descargas';
+@import '../scss/layout/descargas';
 @import 'layout/foro';
 @import 'layout/perfil';
 @import 'main/contenido1';

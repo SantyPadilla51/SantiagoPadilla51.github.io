@@ -1,3 +1,4 @@
+@import '../base/variables';
 .Logo_Leyenda{
     display: flex;
     align-items: center;
@@ -16,17 +17,17 @@
     padding: 0;
 }
 .titulo{
-    color: var(--blanco)
+    color: $blanco;
 }
 
 .nav-link{
-    font-family: var(--fuentePrinciapal);
+    font-family: $fuentePrincipal;
     font-size: 1.4rem;
-    color: var(--blanco);
+    color: $blanco;
 }
 
 .menuHamburguesa{
-    background-color: var(--blanco);
+    background-color: $blanco;
     padding: 1.3rem;
     border-radius: 2px;
 }

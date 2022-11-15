@@ -1,11 +1,14 @@
+@import '../base/variables';
 .footer{
-    background-color: var(--negro);
+    background-color: $negro;
     display:flex;
     align-items: center;
     justify-content:space-evenly;
-    width: 100%;
     margin: 0;
     padding: 1rem;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
 }
 .redes_footer{
     display: flex;
@@ -18,7 +21,6 @@
 
 @media (max-width: 435px){
     .footer{
-        display: flex;
         flex-direction: column;
     }
     .enlaces_footer{

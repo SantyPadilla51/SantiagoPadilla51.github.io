@@ -3,50 +3,50 @@
   margin: 0;
   box-sizing: border-box; }
 
-:root {
-  --negro: #000;
-  --blanco: #fff;
-  --violeta: rgb(133,44,118); }
-
-:root {
-  --fuentePrinciapal:'Montserrat', sans-serif; }
-
 html {
   font-size: 62.5%;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  min-height: 100%;
+  position: relative; }
 
 *, *:before, *:after {
   box-sizing: inherit; }
 
 body {
   background-color: #4b79a1;
-  background-image: linear-gradient(0deg, #4b79a1 0%, #3b4489 45%); }
+  background-image: linear-gradient(0deg, #4b79a1 0%, #3b4489 45%);
+  margin: 0;
+  padding-bottom: 5rem; }
+
+@media (max-width: 435px) {
+  body {
+    padding-bottom: 10rem; } }
 
 h1, h2, h3, h4 {
-  font-family: var(--fuentePrinciapal);
-  color: var(--blanco);
+  font-family: "Montserrat", sans-serif;
+  color: #FFF;
   text-transform: uppercase;
   font-weight: 500;
   margin: 0; }
 
 p {
   margin: 0;
-  font-family: var(--fuentePrinciapal);
-  color: var(--blanco); }
+  font-family: "Montserrat", sans-serif;
+  color: #FFF; }
 
 a {
   text-transform: uppercase;
   margin-left: 2rem;
-  font-family: var(--fuentePrinciapal);
+  font-family: "Montserrat", sans-serif;
   text-decoration: none;
-  color: var(--blanco);
+  color: #FFF;
   font-size: 1.5rem;
   font-weight: 500;
   padding: 1rem; }
 
 a:hover {
   border-radius: 3px;
-  color: var(--negro);
+  color: #000;
   cursor: pointer;
   background-color: burlywood; }
 
@@ -64,20 +64,21 @@ input {
   background-color: antiquewhite; }
 
 span {
-  color: var(--blanco); }
+  color: #FFF; }
 
 textarea {
   background-color: antiquewhite;
   font-size: 1.5rem; }
 
 label, input, textarea {
-  font-family: var(--fuentePrinciapal); }
+  font-family: "Montserrat", sans-serif; }
 
 .botonEnviar {
   text-transform: uppercase;
   font-size: 1.5rem;
-  font-weight: 500;
-  margin-top: 1rem; }
+  font-weight: 700;
+  margin-top: 1rem;
+  font-family: "Montserrat", sans-serif; }
 
 .botonEnviar:hover {
   cursor: pointer;
@@ -93,12 +94,12 @@ label, input, textarea {
   padding-top: 1rem;
   padding-bottom: 1rem;
   border-radius: 3px;
-  color: var(--negro); }
+  color: #000; }
 
 .btnLogIn:hover,
 .btnSingUp:hover {
   text-decoration: none;
-  color: var(--blanco);
+  color: #FFF;
   background-color: darksalmon; }
 
 @media (max-width: 1200px) {
@@ -115,7 +116,7 @@ label, input, textarea {
   align-items: center; }
 
 .botones2 {
-  font-family: var(--fuentePrinciapal);
+  font-family: "Montserrat", sans-serif;
   background-color: burlywood;
   text-transform: uppercase;
   padding-left: 2rem;
@@ -123,11 +124,11 @@ label, input, textarea {
   padding-top: 1rem;
   padding-bottom: 1rem;
   border-radius: 3px;
-  color: var(--negro); }
+  color: #000; }
 
 .botones2:hover {
   text-decoration: none;
-  color: var(--blanco);
+  color: #FFF;
   background-color: darksalmon; }
 
 .Logo_Leyenda {
@@ -146,15 +147,15 @@ label, input, textarea {
   padding: 0; }
 
 .titulo {
-  color: var(--blanco); }
+  color: #FFF; }
 
 .nav-link {
-  font-family: var(--fuentePrinciapal);
+  font-family: "Montserrat", sans-serif;
   font-size: 1.4rem;
-  color: var(--blanco); }
+  color: #FFF; }
 
 .menuHamburguesa {
-  background-color: var(--blanco);
+  background-color: #FFF;
   padding: 1.3rem;
   border-radius: 2px; }
 
@@ -196,8 +197,8 @@ label, input, textarea {
     opacity: 1; } }
 
 .parches {
-  color: var(--negro);
-  font-family: var(--fuentePrinciapal);
+  color: #000;
+  font-family: "Montserrat", sans-serif;
   font-size: 4rem;
   font-weight: bold;
   text-align: center;
@@ -246,7 +247,7 @@ label, input, textarea {
   font-size: 2rem;
   padding: 2rem;
   gap: 2rem;
-  background-color: var(--negro);
+  background-color: #000;
   -webkit-box-shadow: 0px 7px 11px 1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 7px 11px 1px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 7px 11px 1px rgba(0, 0, 0, 0.75);
@@ -258,7 +259,7 @@ label, input, textarea {
   font-size: 1.3rem;
   font-weight: bold;
   padding: 1.3rem;
-  font-family: var(--fuentePrinciapal);
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   background-color: burlywood;
   border-radius: 3px; }
@@ -268,8 +269,8 @@ label, input, textarea {
   background-color: darksalmon; }
 
 .titulo_foro {
-  color: var(--blanco);
-  font-family: var(--fuentePrinciapal);
+  color: #FFF;
+  font-family: "Montserrat", sans-serif;
   font-size: 4rem;
   font-weight: bold;
   text-align: center;
@@ -320,25 +321,25 @@ label, input, textarea {
   grid-column: 3/4; }
 
 .numero_like {
-  color: var(--negro);
-  font-family: var(--fuentePrinciapal);
+  color: #000;
+  font-family: "Montserrat", sans-serif;
   font-size: 2rem;
   font-weight: 500; }
 
 .numero_dislike {
   color: #d73535;
-  font-family: var(--fuentePrinciapal);
+  font-family: "Montserrat", sans-serif;
   font-size: 2rem;
   font-weight: 500; }
 
 .numero_dislike,
 .numero_like {
-  background-color: var(--blanco);
+  background-color: #FFF;
   padding: 0.6rem;
   border-radius: 1px; }
 
 .aporte, .comentario {
-  color: var(--blanco);
+  color: #FFF;
   font-size: larger;
   padding: 1.2rem; }
 
@@ -348,12 +349,12 @@ label, input, textarea {
   display: block;
   padding-left: 1rem;
   padding-top: 1rem;
-  font-family: var(--fuentePrinciapal);
+  font-family: "Montserrat", sans-serif;
   font-size: larger;
   font-weight: 500; }
 
 .info_usuario span {
-  color: var(--negro); }
+  color: #000; }
 
 @media (max-width: 768px) {
   .avatar_foro img {
@@ -371,15 +372,56 @@ label, input, textarea {
   flex-direction: column;
   align-items: flex-start;
   padding: 2rem;
-  background-color: burlywood;
+  background-color: rgba(190, 180, 174, 0.207);
   border-radius: 3px; }
 
 .tabla_del_jugador {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-  grid-auto-flow: column;
-  grid-auto-rows: min-content; }
+  text-align: center;
+  border: 2px solid black;
+  background-color: #000;
+  padding: .7rem; }
+
+.estadisticas_jugador {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0.5rem;
+  text-align: center;
+  border: 2px solid black;
+  align-items: center; }
+
+.estadisticas_jugador ul {
+  display: flex;
+  margin: 0 auto;
+  list-style: none;
+  gap: 2rem;
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  color: #000; }
+
+.escudo-Nombre {
+  display: flex;
+  align-items: center;
+  text-align: right;
+  margin: 0; }
+
+#escudo {
+  display: flex;
+  align-items: flex-end;
+  width: 40px;
+  height: 40px; }
+
+@media (max-width: 988px) {
+  .gridPerfil {
+    display: block; }
+  .infoUsuario {
+    margin-bottom: 3rem;
+    padding: 1rem; }
+  .infoUsuario img {
+    width: 50px;
+    height: 50px; } }
 
 .contenidoPrincipal {
   background-image: url(../../assets/wallpaperbetter.com_1920x1080.jpg);
@@ -451,8 +493,8 @@ label, input, textarea {
   padding-top: 3rem; }
 
 .titulo_contenido3 {
-  color: var(--blanco);
-  font-family: var(--fuentePrinciapal);
+  color: #FFF;
+  font-family: "Montserrat", sans-serif;
   font-size: 4rem;
   font-weight: bold;
   text-align: center;
@@ -481,7 +523,7 @@ label, input, textarea {
   align-items: center;
   text-align: center;
   padding: 2rem;
-  background-color: var(--negro);
+  background-color: #000;
   -webkit-box-shadow: 0px 10px 12px 4px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 10px 12px 4px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 10px 12px 4px rgba(0, 0, 0, 0.75); }
@@ -497,7 +539,7 @@ label, input, textarea {
 .boton_item {
   font-size: 1.3rem;
   font-weight: bold;
-  font-family: var(--fuentePrinciapal);
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   margin-top: 2rem;
   padding-left: 2rem;
@@ -512,35 +554,39 @@ label, input, textarea {
   background-color: darksalmon; }
 
 .contenidoFormulario {
-  padding-top: 3rem; }
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
 
 .encabezadoContacto {
   font-size: 2.3rem;
-  background-color: var(--negro);
+  background-color: #000;
   margin: 0;
   padding: 2rem;
-  color: var(--blanco); }
+  color: #FFF; }
 
 .formulario {
   margin: 0 auto;
-  margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
   width: 65%;
   background: #939367;
   background: radial-gradient(circle, #939367 17%, #b5a755 97%);
-  color: var(--blanco);
+  color: #FFF;
   border: 2px solid antiquewhite;
-  padding: 2rem; }
+  padding: 2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600; }
 
 .footer {
-  background-color: var(--negro);
+  background-color: #000;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  width: 100%;
   margin: 0;
-  padding: 1rem; }
+  padding: 1rem;
+  width: 100%;
+  position: absolute;
+  bottom: 0; }
 
 .redes_footer {
   display: flex;
@@ -552,7 +598,6 @@ label, input, textarea {
 
 @media (max-width: 435px) {
   .footer {
-    display: flex;
     flex-direction: column; }
   .enlaces_footer {
     display: flex;

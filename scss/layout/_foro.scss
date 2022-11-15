@@ -1,6 +1,7 @@
+@import '../base/variables';
 .titulo_foro{
-    color: var(--blanco);
-    font-family: var(--fuentePrinciapal);
+    color: $blanco;
+    font-family: $fuentePrincipal;
     font-size: 4rem;
     font-weight: bold;
     text-align: center;
@@ -56,28 +57,28 @@
 }
 
 .numero_like{
-    color: var(--negro);
-    font-family: var(--fuentePrinciapal);
+    color: $negro;
+    font-family: $fuentePrincipal;
     font-size: 2rem;
     font-weight: 500;
 }
 
 .numero_dislike{
     color: rgb(215, 53, 53);
-    font-family: var(--fuentePrinciapal);
+    font-family: $fuentePrincipal;
     font-size: 2rem;
     font-weight: 500;
 }
 
 .numero_dislike,
 .numero_like{
-    background-color: var(--blanco);
+    background-color: $blanco;
     padding: 0.6rem;
     border-radius: 1px;
 
 }
 .aporte, .comentario{
-    color: var(--blanco);
+    color: $blanco;
     font-size:larger;
     padding: 1.2rem;
 }
@@ -87,12 +88,12 @@
     display:block;
     padding-left: 1rem;
     padding-top: 1rem;
-    font-family: var(--fuentePrinciapal);
+    font-family: $fuentePrincipal;
     font-size: larger;
     font-weight: 500;
 }
 .info_usuario span{
-    color:var(--negro);
+    color: $negro;
 }
 
 @media (max-width: 768px){
