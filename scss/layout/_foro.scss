@@ -1,4 +1,5 @@
 @import '../base/variables';
+@import '../base/mixins';
 .titulo_foro{
     color: $blanco;
     font-family: $fuentePrincipal;
@@ -95,8 +96,8 @@
 .info_usuario span{
     color: $negro;
 }
-
-@media (max-width: 768px){
+//-----------Media Queries---------
+@include tablet{
     .avatar_foro img{
         height: 4rem;
         width: 4rem;

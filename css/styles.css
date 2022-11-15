@@ -139,10 +139,6 @@ label, input, textarea {
   max-height: 8rem;
   max-width: 8rem; }
 
-@media (max-width: 768px) {
-  .Logo_Leyenda {
-    flex-direction: inherit; } }
-
 .header {
   padding: 0; }
 
@@ -196,6 +192,10 @@ label, input, textarea {
     transform-origin: top;
     opacity: 1; } }
 
+@media (max-width: 768px) {
+  .Logo_Leyenda {
+    flex-direction: inherit; } }
+
 .parches {
   color: #000;
   font-family: "Montserrat", sans-serif;
@@ -211,10 +211,6 @@ label, input, textarea {
   grid-column: 2/3;
   grid-row: 1/3; }
 
-@media (max-width: 768px) {
-  #Video {
-    max-width: 60rem; } }
-
 .encabezadoDescargas {
   padding: 6rem;
   display: grid;
@@ -224,23 +220,12 @@ label, input, textarea {
   font-size: 3rem;
   padding-bottom: 15rem; }
 
-@media (max-width: 1000px) {
-  .encabezadoDescargas {
-    display: flex;
-    flex-direction: column; } }
-
 .contenidoDescarga {
   padding: 4rem;
   background-color: #cdc6c6;
   column-gap: 4rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr); }
-
-@media (max-width: 1000px) {
-  .contenidoDescarga {
-    gap: 4rem;
-    display: flex;
-    flex-direction: column; } }
 
 .descripcionDescarga {
   text-align: center;
@@ -267,6 +252,19 @@ label, input, textarea {
 .botonDescarga:hover {
   cursor: pointer;
   background-color: darksalmon; }
+
+@media (max-width: 992px) {
+  .contenidoDescarga {
+    gap: 4rem;
+    display: flex;
+    flex-direction: column; }
+  .encabezadoDescargas {
+    display: flex;
+    flex-direction: column; } }
+
+@media (max-width: 768px) {
+  #Video {
+    max-width: 60rem; } }
 
 .titulo_foro {
   color: #FFF;
@@ -413,7 +411,7 @@ label, input, textarea {
   width: 40px;
   height: 40px; }
 
-@media (max-width: 988px) {
+@media (max-width: 992px) {
   .gridPerfil {
     display: block; }
   .infoUsuario {
@@ -596,7 +594,7 @@ label, input, textarea {
   margin-right: 1rem;
   font-size: 1.2rem; }
 
-@media (max-width: 435px) {
+@media (max-width: 480px) {
   .footer {
     flex-direction: column; }
   .enlaces_footer {

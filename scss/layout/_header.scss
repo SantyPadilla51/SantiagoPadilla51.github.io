@@ -1,76 +1,75 @@
 @import '../base/variables';
 .Logo_Leyenda{
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 .logoPes6{
-    max-height: 8rem;
-    max-width: 8rem;
+  max-height: 8rem;
+  max-width: 8rem;
 }
-@media(max-width:768px){
-    .Logo_Leyenda{
-        flex-direction: inherit;
-    }
-}
-
 .header{
-    padding: 0;
+  padding: 0;
 }
 .titulo{
-    color: $blanco;
+  color: $blanco;
 }
-
 .nav-link{
-    font-family: $fuentePrincipal;
-    font-size: 1.4rem;
-    color: $blanco;
+  font-family: $fuentePrincipal;
+  font-size: 1.4rem;
+  color: $blanco;
 }
 
 .menuHamburguesa{
-    background-color: $blanco;
-    padding: 1.3rem;
-    border-radius: 2px;
+  background-color: $blanco;
+  padding: 1.3rem;
+  border-radius: 2px;
 }
 .linksPrincipales{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .menu-animacion {
 	-webkit-animation: menu-animacion 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
-	        animation: menu-animacion 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+	animation: menu-animacion 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
 }
 
 @-webkit-keyframes menu-animacion {
-    0% {
-      -webkit-transform: rotateX(-100deg);
-              transform: rotateX(-100deg);
-      -webkit-transform-origin: top;
-              transform-origin: top;
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: rotateX(0deg);
-              transform: rotateX(0deg);
-      -webkit-transform-origin: top;
-              transform-origin: top;
-      opacity: 1;
-    }
+  0% {
+    -webkit-transform: rotateX(-100deg);
+    transform: rotateX(-100deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 0;
   }
-  @keyframes menu-animacion {
-    0% {
-      -webkit-transform: rotateX(-100deg);
-              transform: rotateX(-100deg);
-      -webkit-transform-origin: top;
-              transform-origin: top;
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: rotateX(0deg);
-              transform: rotateX(0deg);
-      -webkit-transform-origin: top;
-              transform-origin: top;
-      opacity: 1;
-    }
+  100% {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 1;
+  }
+}
+@keyframes menu-animacion {
+  0% {
+    -webkit-transform: rotateX(-100deg);
+    transform: rotateX(-100deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 1;
+  }
+}
+//------------Media Queries--------
+@include tablet{
+  .Logo_Leyenda{
+    flex-direction: inherit;
+  }
 }

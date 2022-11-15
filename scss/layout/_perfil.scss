@@ -1,4 +1,5 @@
 @import '../base/variables';
+@import '../base/mixins';
 .gridPerfil{
     margin: 7rem;
     display: grid;
@@ -60,7 +61,8 @@
     height: 40px;
 }
 
-@media (max-width: 988px){
+//--------------Media Queries---------
+@include desktop{
     .gridPerfil{
         display: block;
     }
