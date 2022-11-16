@@ -1,3 +1,4 @@
+@import '../base/mixins';
 .contenido2{
     padding-top: 5rem;
     display: block;
@@ -5,8 +6,6 @@
     text-align: center;
 
 }
-
-
 .contenido2 h2{
     font-size: 5rem;
 }
@@ -14,7 +13,20 @@
     font-size: 2rem;
     text-transform: uppercase;
 }
-
 .galeria{
     padding-top: 3rem;
+}
+//------------Media Queries---------
+@include mobile{
+    .galeria{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
+        margin: 0.5rem;
+    }
+    .galeria img{
+        max-width: 15rem;
+        height: 15rem;
+        
+    }
 }

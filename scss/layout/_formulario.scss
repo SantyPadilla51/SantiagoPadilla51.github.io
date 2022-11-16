@@ -9,18 +9,38 @@
     margin: 0;
     padding: 2rem;
     color: $blanco;
+    border-radius: 1.5rem;
 }
 
 .formulario{
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    width: 65%;
-    background: rgb(147,147,103);
-    background: radial-gradient(circle, rgba(147,147,103,1) 17%, rgba(181,167,85,1) 97%);
+    width: 50%;
+    background: rgba(0, 0, 0, 0.103);
     color: $blanco;
-    border: 2px solid antiquewhite;
+    // border: 2px solid antiquewhite;
+    border-radius: 1.5rem;
     padding: 2rem;
     font-family: $fuentePrincipal;
     font-weight: 600;
+}
+
+.formulario {
+    input, textarea{
+        border-radius: 1rem;
+    }
+
+}
+
+//-----------Media Queries---------
+@include mobile{
+    .formulario{
+        width: 90%;
+    }
+}
+@include tablet{
+    .formulario{
+        width: 75%;
+    }
 }

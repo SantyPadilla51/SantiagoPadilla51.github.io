@@ -18,10 +18,6 @@ body {
   margin: 0;
   padding-bottom: 5rem; }
 
-@media (max-width: 435px) {
-  body {
-    padding-bottom: 10rem; } }
-
 h1, h2, h3, h4 {
   font-family: "Montserrat", sans-serif;
   color: #FFF;
@@ -72,6 +68,10 @@ textarea {
 
 label, input, textarea {
   font-family: "Montserrat", sans-serif; }
+
+@media (max-width: 480px) {
+  body {
+    padding-bottom: 10rem; } }
 
 .botonEnviar {
   text-transform: uppercase;
@@ -362,16 +362,21 @@ label, input, textarea {
 .gridPerfil {
   margin: 7rem;
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 40% 60%;
   column-gap: 2rem; }
 
 .infoUsuario {
   display: flex;
-  flex-direction: column;
   align-items: flex-start;
-  padding: 2rem;
+  padding: 1.5rem;
   background-color: rgba(190, 180, 174, 0.207);
   border-radius: 3px; }
+
+.infoUsuario h4 {
+  color: #000; }
+
+.infoUsuario div {
+  padding: 2rem; }
 
 .tabla_del_jugador {
   display: grid;
@@ -402,8 +407,9 @@ label, input, textarea {
 .escudo-Nombre {
   display: flex;
   align-items: center;
-  text-align: right;
-  margin: 0; }
+  margin: 0 auto;
+  text-transform: uppercase;
+  color: #FFF; }
 
 #escudo {
   display: flex;
@@ -411,15 +417,29 @@ label, input, textarea {
   width: 40px;
   height: 40px; }
 
+.info_copa {
+  display: flex;
+  align-items: center;
+  margin: 0 auto; }
+
 @media (max-width: 992px) {
   .gridPerfil {
-    display: block; }
+    display: block;
+    max-width: 100%;
+    margin: 0.5rem; }
   .infoUsuario {
     margin-bottom: 3rem;
     padding: 1rem; }
   .infoUsuario img {
     width: 50px;
     height: 50px; } }
+
+@media (max-width: 480px) {
+  .tabla_del_jugador {
+    gap: 1rem; }
+  #escudo {
+    width: 20px;
+    height: 20px; } }
 
 .contenidoPrincipal {
   background-image: url(../../assets/wallpaperbetter.com_1920x1080.jpg);
@@ -489,6 +509,16 @@ label, input, textarea {
 
 .galeria {
   padding-top: 3rem; }
+
+@media (max-width: 480px) {
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: 0.5rem; }
+  .galeria img {
+    max-width: 15rem;
+    height: 15rem; } }
 
 .titulo_contenido3 {
   color: #FFF;
@@ -560,20 +590,31 @@ label, input, textarea {
   background-color: #000;
   margin: 0;
   padding: 2rem;
-  color: #FFF; }
+  color: #FFF;
+  border-radius: 1.5rem; }
 
 .formulario {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  width: 65%;
-  background: #939367;
-  background: radial-gradient(circle, #939367 17%, #b5a755 97%);
+  width: 50%;
+  background: rgba(0, 0, 0, 0.103);
   color: #FFF;
-  border: 2px solid antiquewhite;
+  border-radius: 1.5rem;
   padding: 2rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 600; }
+
+.formulario input, .formulario textarea {
+  border-radius: 1rem; }
+
+@media (max-width: 480px) {
+  .formulario {
+    width: 90%; } }
+
+@media (max-width: 768px) {
+  .formulario {
+    width: 75%; } }
 
 .footer {
   background-color: #000;

@@ -1,4 +1,5 @@
 @import '../base/variables';
+@import '../base/mixins';
 html {
     font-size: 62.5%;
     box-sizing: border-box;
@@ -15,13 +16,6 @@ body{
     margin: 0;
     padding-bottom: 5rem;
 }
-@media (max-width:435px){
-    body{
-        padding-bottom: 10rem;
-    }
-}
-
-
 h1,h2,h3,h4{
     font-family: $fuentePrincipal;
     color: $blanco;
@@ -29,13 +23,11 @@ h1,h2,h3,h4{
     font-weight: 500;
     margin: 0;
 }
-
 p{
     margin: 0;
     font-family: $fuentePrincipal;
     color: $blanco;
 }
-
 a{
     text-transform: uppercase;
     margin-left: 2rem;
@@ -64,23 +56,25 @@ label{
     margin-top: 1rem;
     text-transform: uppercase;
 }
-
-
 input{
     font-size: 1.3rem;
     padding: 1rem;
     background-color: antiquewhite;
 }
-
 span{
     color: $blanco;
 }
-
 textarea{
     background-color: antiquewhite;
     font-size: 1.5rem;
 }
-
 label, input, textarea{
     font-family: $fuentePrincipal;
+}
+
+//-----------Media Queries---------
+@include mobile{
+    body{
+        padding-bottom: 10rem;
+    }
 }

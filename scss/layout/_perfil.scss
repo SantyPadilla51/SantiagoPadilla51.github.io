@@ -3,19 +3,25 @@
 .gridPerfil{
     margin: 7rem;
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 40% 60%;
     column-gap: 2rem;
 }
 
 .infoUsuario{
     display: flex;
-    flex-direction: column;
     align-items: flex-start;
-    padding: 2rem;
+    padding: 1.5rem;
     background-color: rgba(190, 180, 174, 0.207);
     border-radius: 3px;
 }
-
+.infoUsuario{
+    h4{
+        color: $negro;
+    }
+    div{
+        padding: 2rem;
+    }
+}
 .tabla_del_jugador{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -50,8 +56,9 @@
 .escudo-Nombre{
     display: flex;
     align-items: center;
-    text-align:right;
-    margin: 0;
+    margin: 0 auto;
+    text-transform: uppercase;
+    color: $blanco;
 }
 
 #escudo{
@@ -60,11 +67,18 @@
     width: 40px;
     height: 40px;
 }
+.info_copa{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
 
 //--------------Media Queries---------
 @include desktop{
     .gridPerfil{
         display: block;
+        max-width: 100%;
+        margin: 0.5rem;
     }
     .infoUsuario{
         margin-bottom: 3rem;
@@ -73,5 +87,14 @@
     .infoUsuario img{
         width: 50px;
         height: 50px;
+    }
+}
+@include mobile{
+    .tabla_del_jugador{
+        gap: 1rem;
+    }
+    #escudo{
+        width: 20px;
+        height: 20px;
     }
 }
