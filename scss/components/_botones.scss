@@ -12,25 +12,6 @@
     background-color: rgba(250, 235, 215, 0.778);
 }
 
-.btnLogIn,
-.btnSingUp{
-    font-family: $fuentePrincipal;
-    background-color:burlywood;
-    text-transform: uppercase;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    border-radius: 3px;
-    color: $negro;
-}
-.btnLogIn:hover,
-.btnSingUp:hover{
-    text-decoration: none;
-    color: $blanco;
-    background-color: darksalmon;
-}
-
 .FlexBotones2{
     display: flex;
     margin-top: 4rem;
@@ -55,15 +36,4 @@
     background-color: darksalmon;
 }
 
-//---------Media Queries---------
-@include desktop{
-    .btnLogIn{
-        grid-column: 6/7;
-        grid-row: 1/2;
-    }
-    .btnSingUp{
-        grid-column: 6/7;
-        grid-row: 2/3;
-    }  
-}
 
