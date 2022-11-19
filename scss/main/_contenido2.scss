@@ -1,4 +1,5 @@
 @import '../base/mixins';
+@import '../base/variables';
 .contenido2{
     padding-top: 5rem;
     display: block;
@@ -6,16 +7,20 @@
     text-align: center;
 
 }
-.contenido2 h2{
-    font-size: 5rem;
+.titulo_contenido2{
+    color: $blanco;
+    font-family: $fuentePrincipal;
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
 }
 .contenido2 p{
     font-size: 2rem;
-    text-transform: uppercase;
 }
 .galeria{
     padding-top: 3rem;
 }
+
 //------------Media Queries---------
 @include mobile{
     .galeria{

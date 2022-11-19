@@ -9,20 +9,17 @@
     padding-bottom: 1rem;
     padding-top: 2rem;
 }
-
 .gridForo{
     border: #000 solid 1.5px;
     margin: 5rem;
     display: grid;
     grid-template-columns: 20% 60% 20%;
 }
-
 .encabezadoForo{
     font-size: 1.3rem;
     background-color: #283E51;
     padding: 0.5rem;
 }
-
 .avatar_foro{
     padding: 0.5rem;
     display: flex;
@@ -53,8 +50,8 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color:rgb(99, 102, 154);
     grid-column: 3/4;
+    background-color: rgb(99, 102, 154);
 }
 
 .numero_like{
@@ -87,8 +84,7 @@
     background-color:rgb(99, 102, 154);
     grid-column: 1/2;
     display:block;
-    padding-left: 1rem;
-    padding-top: 1rem;
+    padding: 1.2rem;
     font-family: $fuentePrincipal;
     font-size: larger;
     font-weight: 500;
@@ -101,5 +97,34 @@
     .avatar_foro img{
         height: 4rem;
         width: 4rem;
+    }
+}
+
+@include mobile{
+    .gridForo{
+        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
+    .encabezadoForo{
+        display: none;
+    }
+    .info_usuario{
+        grid-column: 2/4;
+    }
+    .aporte, .comentario{
+        grid-column: 1/4;
+    }
+    .like{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    .dislike{
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+    .like, .dislike,.numero_dislike, .numero_like{
+        background-color: rgb(99, 102, 154);
     }
 }

@@ -1,11 +1,13 @@
 @import '../base/variables';
+@import '../base/mixins';
 .titulo_contenido3{
     color: $blanco;
     font-family: $fuentePrincipal;
     font-size: 4rem;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     grid-column: 1/4;
 }
 .contenido3{
@@ -18,14 +20,6 @@
     grid-template-columns: repeat(3, 1fr);
     column-gap: 2rem;
 }
-@media(max-width:768px){
-    .contenido3{
-        gap: 4rem;
-        display: flex;
-        flex-direction: column;
-    }
-}
-
 .item{
     margin: 0 auto;
     display: block;
@@ -37,17 +31,14 @@
     -moz-box-shadow: 0px 10px 12px 4px rgba(0,0,0,0.75);
     box-shadow: 0px 10px 12px 4px rgba(0,0,0,0.75);
 }
-
 .titulo_item{
     font-weight: bold;
     font-size: 2rem;
     margin-bottom: 2rem;
 }
-
 .descripcion_item{
     font-size: 1.5rem;
 }
-
 .boton_item{
     font-size: 1.3rem;
     font-weight: bold;
@@ -61,8 +52,23 @@
     background-color:burlywood;
     border-radius: 3px;
 }
-
 .boton_item:hover{
     cursor: pointer;
     background-color: darksalmon;
+}
+
+//-------Media Queries----------
+@include tablet{
+    .contenido3{
+        gap: 4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@include mobile{
+    .item{
+        width: 33rem;
+        margin: 0;
+    }
 }
